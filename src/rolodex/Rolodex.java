@@ -4,8 +4,9 @@ import java.util.ArrayList;
 
 import java.util.Arrays;
 
-// Harris Spahic
-// "I pledge my honor I have abided by the Steven's Honor System."
+// Name: Harris Spahic
+// Pledge: "I pledge my honor I have abided by the Stevens Honor System."
+
 
 public class Rolodex {
 	private Entry cursor;
@@ -279,7 +280,7 @@ public class Rolodex {
 	 */
 	
 	public String currentEntryToString() {
-		return cursor.getName();
+		return cursor.toString();
 	}
 	
 
@@ -325,6 +326,18 @@ public class Rolodex {
 		r.addCard("Cris", "4");
 //
 		System.out.println(r);
+		
+		r.initializeCursor();
+		
+		System.out.println(r.getCursor());
+		r.nextSeparator();
+		System.out.println(r.getCursor());
+		r.nextSeparator();
+		r.nextEntry();
+		System.out.println(r.getCursor());
+		r.nextSeparator();
+		System.out.println(r.getCursor());
+		
 	}
 
 	

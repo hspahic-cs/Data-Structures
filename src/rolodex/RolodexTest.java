@@ -159,7 +159,10 @@ public class RolodexTest {
 		empty.addCard("Alice", "888");
 		empty.initializeCursor();
 		empty.nextEntry();
-		assertEquals(empty.currentEntryToString(), "Alice");
+		assertEquals(empty.currentEntryToString(), "Name: Alice, Cell: 888");
+		empty.nextSeparator();
+		System.out.println(empty.currentEntryToString());
+		assertEquals(empty.currentEntryToString(), "Separator B");
 	}
 
 }
