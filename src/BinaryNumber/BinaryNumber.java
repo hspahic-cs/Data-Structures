@@ -5,7 +5,7 @@ import java.util.Arrays;
 class BinaryNumber {
     private int data[];
     private int length;
-    
+
     /*
     * Contructs BinaryNumber as array of all zeroes given length 'length'
     * @param length The length of array
@@ -35,14 +35,14 @@ class BinaryNumber {
     public int getLength(){
         return length;
     }
-    
+
     /*
     * Returns integer array representing binary number
     */
     public int[] getInnerArray(){
         return data;
     }
-    
+
     /*
     * Returns integer at given index in BinaryNumber
     * @param index Index of element to be returned
@@ -63,8 +63,8 @@ class BinaryNumber {
     public int toDecimal(){
         int bTen = 0;
         for(int i = length - 1; i >= 0; i--){
-          bTen += data[i] * Math.pow(2, (length - 1) - i);   
-        } 
+          bTen += data[i] * Math.pow(2, (length - 1) - i);
+        }
         return bTen;
     }
 
@@ -101,7 +101,7 @@ class BinaryNumber {
         }
         length = data.length;
     }
-    
+
        /*
     * Computes the 'bitwise or' of 2 BinaryNumbers and returns the result
     * @param bn1 First BinaryNumber
@@ -157,16 +157,16 @@ class BinaryNumber {
         for(int i = 0; i < length; i++){
             s.append(data[i]);
         }
-        
+
         return s.toString();
     }
 
-    /* 
+    /*
      * Adds bitwise specified BinaryNumber to class BinaryNumber
      * @param bn1 BinaryNumber to be added to class BinaryNumber
     */
 
-    
+
     public void add(BinaryNumber bn1){
         if (length != bn1.length){
             if (length > bn1.length){
@@ -189,7 +189,7 @@ class BinaryNumber {
             else{
                 carry = 0;
             }
-            
+
             System.out.println("Result: " + result + " | " + "Index: " + i + " | " + "Temp: " + Arrays.toString(temp));
             temp[i + 1] = result % 2;
         }
@@ -199,16 +199,16 @@ class BinaryNumber {
             length = temp.length;
             data = temp;
         }
-        
+
         else{
             int[] newtemp = new int[length];
             for (int i = 1; i < temp.length; i++){
                 newtemp[i - 1] = temp[i];
             }
             data = newtemp;
-        }   
+        }
     }
-    
+
     /*
     *   Helper for "add" method, prepends 0's to array equal to given amount
     *   @param amount Number of zeroes to prepend
@@ -227,8 +227,8 @@ class BinaryNumber {
 
 
     public static void main(String args[]){
-        
+
     }
 
-    
+
 }
