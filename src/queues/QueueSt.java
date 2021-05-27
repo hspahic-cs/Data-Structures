@@ -3,9 +3,6 @@ package queues;
 import stacks.StackSLL;
 import stacks.StackSLL.Node;
 
-//Harris Spahic
-// I pledge my honor I have abided by the Steven's Honor System
-
 public class QueueSt<E> {
 
 		// data fields

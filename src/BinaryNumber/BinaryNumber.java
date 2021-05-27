@@ -225,27 +225,10 @@ class BinaryNumber {
     }
 
 
-/*
+
     public static void main(String args[]){
-        BinaryNumber bn1 = new BinaryNumber("01101");
-        BinaryNumber bn2 = new BinaryNumber("01001");
-        System.out.println("Bn1 Length: " + bn1.getLength() + " | " + "Bn1 Length: " + bn2.getLength());
-        System.out.println("Bn1 : "  + bn1);
-        //System.out.println("Bn2 : " + bn2);
-        //System.out.println("Bn1 / Index = 4 " + " | " +  bn1.getDigit(4));
-        //System.out.println("Bn2 in decimal: " + bn2.toDecimal()); // Should be 28
-        //System.out.println("Bn1 || Bn2 ==> " + Arrays.toString(bwor(bn1, bn2)));
-        //System.out.println("Bn1 && Bn2 ==> " + Arrays.toString(bwand(bn1, bn2)));
-        //bn1.bitShift(-1, 3);
-        //System.out.println("BitShift| A = 3 & D = -1 | " + bn1);
-        //bn2.bitShift(1, 2);
-        //System.out.println("BitShift| A = 2 & D = 1 | " + bn2);
-        //bn1.prepend(3);
-        //System.out.println(bn1);
-        bn1.add(bn2);
-        System.out.println(bn1);
         
     }
-*/
+
     
 }

@@ -100,9 +100,15 @@ public class HashTableOpen<K, V> implements KWHashMap
 	
 	public V remove(Object key)
 		{
-		//TODO
-		
-		return null;
+		int index = find(key);
+		if(table[index] == null) {
+			return null;
+		}
+		V oldValue = table[index].value;
+		table[index] = null;
+		numKeys--;
+
+		return oldValue;
 		}
 	
 	private void rehash()

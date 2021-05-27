@@ -2,9 +2,6 @@ package stacks;
 
 import stacks.StackSLL.Node;
 
-//Harris Spahic
-// I pledge my honor I have abided by the Steven's Honor System
-
 public class StackSLL<E> {
 
 	public static class Node<F> {
@@ -73,12 +70,12 @@ public class StackSLL<E> {
 		StringBuilder r = new StringBuilder();
 		
 		Node<E> current = top;
-		//r.append("[top] <- ");
+		r.append("[top] <- ");
 		while (current!=null) {
 			r.append(current.data.toString()+" <- ");
 			current=current.next;
 		}
-		//r.append("[bottom]");
+		r.append("[bottom]");
 		return r.toString();
 	}
 	

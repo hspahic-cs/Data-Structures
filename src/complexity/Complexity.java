@@ -80,8 +80,7 @@ public class Complexity {
     // Time complexity = log(log(n))
     public static void method5(int n){
         int calls = 0;
-        for(int i = 1; i < Math.log10(n); i *= 10){ 
-            System.out.println(Math.log10(n)); 
+        for(int i = 1; i < n; i *= Math.pow(10, 10)){  
             calls++;
         }
         System.out.println("Number of calls : " + calls + " | Method 5");

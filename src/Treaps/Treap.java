@@ -3,10 +3,6 @@ package Treaps;
 import java.util.ArrayList;
 import java.util.Random;
 
-/* Harris Spahic
- * "I pledge my honor I have abided by the Steven's Honor System."
- */
-
 public class Treap <E extends Comparable<E>>{
 	private static class Node<F extends Comparable<F>>{
 		public F data;

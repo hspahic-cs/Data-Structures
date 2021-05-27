@@ -1,12 +1,7 @@
 package rolodex;
 
 import java.util.ArrayList;
-
 import java.util.Arrays;
-
-// Name: Harris Spahic
-// Pledge: "I pledge my honor I have abided by the Stevens Honor System."
-
 
 public class Rolodex {
 	private Entry cursor;
